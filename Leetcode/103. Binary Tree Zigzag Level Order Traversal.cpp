@@ -1,4 +1,4 @@
-// APPROACH 1 : Using 2 stacks (Can also use deque for implementing the 2 stacks using null as a seperator)
+// APPROACH 1 : Using 2 stacks (Can also use deque for implementing the 2 stacks using null as a seperator/delimiter)
 
 /**
  * Definition for a binary tree node.
