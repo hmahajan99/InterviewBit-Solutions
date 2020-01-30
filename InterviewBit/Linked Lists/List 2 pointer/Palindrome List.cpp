@@ -88,6 +88,7 @@ int Solution::lPalin(ListNode* head) {
 /***************************************************************************************************************************/
 
 // Approach 3 : Using recursion
+// Recursive call : len => len-2 , Base case : len = 1 or 2
 // Time Complexity: O(n)
 // Auxiliary Space: O(n) if Function Call Stack size is considered, otherwise O(1).
 
@@ -135,6 +136,9 @@ int Solution::lPalin(ListNode* head) {
 
 // Approach 4 : Simple solution would be to create clone of the linked list, reverse it and check if both linked lists are equal or not. 
 // This approach requires three traversals of the linked list and requires extra space for storing duplicates list.
+
+// LL + HASHING
+// OR ALTERNATIVELY PUSH NODES INTO A VECTOR (i.e vector<Node*> v => v[i] will give node at position i now)
 
 /**
  * Definition for singly-linked list.
