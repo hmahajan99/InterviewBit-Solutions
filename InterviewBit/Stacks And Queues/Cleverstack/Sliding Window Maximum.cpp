@@ -5,6 +5,7 @@
 /***************************************************************************************************************************/
 
 // Approach 2 : Using self balancing BST -> Time O(n lg w) 
+// Using multiset in C++ STL
 
 vector<int> Solution::slidingMaximum(const vector<int> &A, int B) {
     multiset<int> ms;
