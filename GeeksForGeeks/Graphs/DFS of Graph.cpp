@@ -1,4 +1,5 @@
 // Approach 1: Recursive
+// Time - O(V+E)
 
 /* Function to do DFS of graph
 *  g[]: array of vectors to represent graph
@@ -60,7 +61,7 @@ void dfs(int src, vector<int> g[], bool vis[]){
                 vis[neighbour] = true; // vis = true when push in stack
                 s.push(neighbour);
                 push=true;
-                break;
+                break; // Important to break also
             }
         }   
         if(!push){
