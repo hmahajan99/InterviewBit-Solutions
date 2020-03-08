@@ -74,6 +74,6 @@ int* topoSort(int V, vector<int> adj[]){
         }
     }
     // If count (i.e count of visited nodes) != V (i.e no of nodes) here then topological sort is not possible for this graph
-    // TO DETECT CYCLE in a directed graph using BFS, if count!=V => cycle, else => no cycle
+    // TO DETECT CYCLE in a DIRECTED graph using BFS, if count!=V => cycle, else => no cycle
     return sorted;
 }
