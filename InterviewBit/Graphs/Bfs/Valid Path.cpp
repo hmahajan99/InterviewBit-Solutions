@@ -1,3 +1,6 @@
+// Check if (i,j) is a valid point for all 0<=i<=x, 0<=j<=y. By valid point we mean that none of the circle should contain it.
+// Now you know all the valid point in rectangle. You need to figure out if you can go from (0,0) to (x,y) through valid points. This can be done with any graph traversal algorithms like BFS/DFS.
+
 // Approach 1: Using BFS
 
 bool isSafe(int x1, int y1, int x2, int y2, int r){
