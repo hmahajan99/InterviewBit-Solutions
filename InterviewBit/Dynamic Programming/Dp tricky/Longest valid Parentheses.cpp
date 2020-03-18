@@ -39,3 +39,38 @@ int Solution::longestValidParentheses(string A) {
     return res;
 }
 
+/***************************************************************************************************************************/
+
+// Approach 3
+// Time O(N) Space O(1)
+
+// The idea to solve this problem is to traverse the string on and keep track of the count of open parentheses and close parentheses with the help of two counters left and right respectively
+// Whenever the left becomes equal to right, the length of the current valid string is calculated
+// If the right counter becomes greater than the left counter, then the set of parentheses has become invalid and hence the left and right counters are set to 0.
+// After the above process, the string is similarly traversed from right to left and similar procedure is applied
+
+int Solution::longestValidParentheses(string A) {
+    int n=A.size();
+    int left=0,right=0,maxLength=0; 
+    for (int i=0;i<n;i++) { 
+        if(A[i]=='(') left++; 
+        else right++; 
+  
+        if (left == right) maxLength = max(maxLength, 2 * right); 
+        else if(right>left) left = right = 0; 
+    } 
+    
+    // Forward iteration alone wont give correct answer (if left in surplus)
+    // Eg: A = "(()" => answer will be 0 by forward iteration alone
+    left=right=0; 
+    for (int i=n-1;i>=0;i--) { 
+        if(A[i]=='(') left++; 
+        else right++; 
+        
+        if(left==right) maxLength = max(maxLength, 2 * left); 
+        else if(left>right) left = right = 0; 
+    } 
+    
+    return maxLength;
+}
+
