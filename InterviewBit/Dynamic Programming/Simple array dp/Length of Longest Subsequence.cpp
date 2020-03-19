@@ -2,7 +2,7 @@
 // Longest Bitonic Subsequence
 // A sequence, sorted in increasing order is considered Bitonic with the decreasing part as empty. Similarly, decreasing order sequence is considered Bitonic with the increasing part as empty.
 // This problem is a variation of standard Longest Increasing Subsequence (LIS) problem
-// NOTE: There exists a O(nLogn) solution for the LIS problem also. (TODO)
+// NOTE: There exists a O(nLogn) solution for the LIS problem using binary search also. 
 
 // Approach: DP
 // Time Complexity: O(n^2)
