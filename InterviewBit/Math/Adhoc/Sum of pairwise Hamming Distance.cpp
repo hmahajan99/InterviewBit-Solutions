@@ -1,4 +1,7 @@
-// Same as Sum of pairwise Hamming Distance in Math
+// Same as Different Bits Sum Pairwise in Bit Manipulation/Bit Play
+
+// Hamming distance between two non-negative integers is defined as the number of positions at which the corresponding bits are different.
+// Given an array of N non-negative integers, find the sum of hamming distances of all pairs of integers in the array.
 
 // Approach 1: Brute force, check each pair O(N^2)
 
@@ -13,7 +16,8 @@
 // Note that all bits are independent in counting, since we are counting number of bits which are different in each pair.
 // So, we just do the same process for all different bits. Since Ai is an integer, we just have to do this for 31 different bits, so our solution is O(31*N).
 
-int Solution::cntBits(vector<int> &A) {
+int Solution::hammingDistance(const vector<int> &A) {
+
     unsigned int mask=1;
     int mod=1e9+7;
     long long ans=0;
@@ -30,5 +34,5 @@ int Solution::cntBits(vector<int> &A) {
     }
     
     return ans;
-    
+
 }
