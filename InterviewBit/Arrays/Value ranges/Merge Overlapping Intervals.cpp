@@ -48,7 +48,7 @@ vector<Interval> Solution::merge(vector<Interval> &A) {
 
 /***************************************************************************************************************************/
 
-// Approach 2: 
+// Approach 2: Sort the intervals based on increasing order of starting time
 
 // Lets see how we check if interval 1 (a,b) intersects with interval 2 (c,d):
 
