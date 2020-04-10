@@ -75,3 +75,7 @@ ListNode* Solution::getIntersectionNode(ListNode* A, ListNode* B) {
     }
     return NULL;
 }
+
+/***************************************************************************************************************************/
+
+// Approach 5 : To check if there is an intersection => traverse both lists and check if tails same
