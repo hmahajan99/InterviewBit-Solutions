@@ -1,3 +1,5 @@
+// Given a binary tree, return the level order traversal of its nodes’ values. (ie, from left to right, level by level).
+
 // Approach 1: Using NULL markers
 
 /**
@@ -86,7 +88,7 @@ vector<vector<int> > Solution::levelOrder(TreeNode* A) {
     
 }
 
-// Alternate: Use nested loop
+// Alternate: Use nested loop(Generate complete level in inner loop)
 
 /**
  * Definition for binary tree

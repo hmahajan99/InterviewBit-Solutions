@@ -76,3 +76,10 @@ int Solution::lca(TreeNode* root, int B, int C) {
         if(i==n||path1[i]!=path2[i]) return path1[i-1];
     }
 }
+
+/***************************************************************************************************************************/
+
+// Approach 3: Store height for every node (unordered_map<TreeNode*,int>) & parent for every node (unordered_map<TreeNode*,TreeNode*>)
+// First move nodes to same height
+// Move up by 1 till they become same
+// This approach takes too much memory - O(n)
