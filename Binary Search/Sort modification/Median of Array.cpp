@@ -13,6 +13,8 @@
 
 // Approach 3: Binary search on smaller array, Partition both such that total elements on left side is half
 // Time - O(log(min(m,n)))
+// NOTE: COMMON APPROACH For BINARY SEARCH on 2 SORTED ARRAYS
+// See GeeksForGeeks/Divide and Conquer/Must Do/K-th element of two sorted Arrays.cpp
 
 double Solution::findMedianSortedArrays(const vector<int> &X, const vector<int> &Y) {
     int x = X.size(), y = Y.size();
@@ -26,7 +28,9 @@ double Solution::findMedianSortedArrays(const vector<int> &X, const vector<int> 
     
     int l=0,r=x;
     while(l<=r){
+        // size(leftPartitionX=partitionX)
         int partitionX = (l+r)/2;
+        // size(leftPartitionY=partitionY)
         int partitionY = (x+y+1)/2 - partitionX;
         
         int maxLeftX = (partitionX==0)?(INT_MIN):X[partitionX-1];

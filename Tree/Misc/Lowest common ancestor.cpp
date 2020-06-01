@@ -1,8 +1,25 @@
-// NOTE: TODO Question: See LCA in BST - O(h)
-
 // Bucket - Tree search
 
+// NOTE: See LCA in BST also => O(h) solution
+
+// Find the lowest common ancestor in an unordered binary tree given two values in the tree.
+// Lowest common ancestor : the lowest common ancestor (LCA) of two nodes v and w in a tree or directed acyclic graph (DAG) 
+//                          is the lowest (i.e. deepest) node that has both v and w as descendants. 
+
+// 1) You are given 2 values. Find the lowest common ancestor of the two nodes represented by val1 and val2
+// 2) No guarantee that val1 and val2 exist in the tree. If one value doesn’t exist in the tree then return -1.
+// 3) There are no duplicate values.
+
+
 // Approach 1 : Recursive solution, bottom up - O(n)
+
+// The approach 2 finds LCA in O(n) time, but requires three tree traversals plus extra spaces for path arrays. 
+// If we assume that the keys n1 and n2 are present in Binary Tree, we can find LCA using single traversal of Binary Tree and without extra storage for path arrays.
+// The idea is to traverse the tree starting from root. 
+// If any of the given keys (n1 and n2) matches with root, then root is LCA (assuming that both keys are present). 
+// If root doesn’t match with any of the keys, we recur for left and right subtree. 
+// The node which has one key present in its left subtree and the other key present in right subtree is the LCA. 
+// If both keys lie in left subtree, then left subtree has LCA also, otherwise LCA lies in right subtree.
 
 /**
  * Definition for binary tree
@@ -79,7 +96,12 @@ int Solution::lca(TreeNode* root, int B, int C) {
 
 /***************************************************************************************************************************/
 
-// Approach 3: Store height for every node (unordered_map<TreeNode*,int>) & parent for every node (unordered_map<TreeNode*,TreeNode*>)
+// Approach 3: Using Parent pointer
+
+// Store height for every node (unordered_map<TreeNode*,int>) & parent for every node (unordered_map<TreeNode*,TreeNode*>)
 // First move nodes to same height
 // Move up by 1 till they become same
 // This approach takes too much memory - O(n)
+
+// The idea is to find depths of given nodes and move up the deeper node pointer by the difference between depths. 
+// Once both nodes reach same level, traverse them up and return the first common node.
