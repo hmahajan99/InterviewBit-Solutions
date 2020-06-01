@@ -28,9 +28,9 @@ double Solution::findMedianSortedArrays(const vector<int> &X, const vector<int> 
     
     int l=0,r=x;
     while(l<=r){
-        // size(leftPartitionX=partitionX)
+        // size(leftPartitionX)=partitionX
         int partitionX = (l+r)/2;
-        // size(leftPartitionY=partitionY)
+        // size(leftPartitionY)=partitionY
         int partitionY = (x+y+1)/2 - partitionX;
         
         int maxLeftX = (partitionX==0)?(INT_MIN):X[partitionX-1];
