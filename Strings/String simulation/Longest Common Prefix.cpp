@@ -6,7 +6,12 @@
 
 // For Example, longest common prefix of "abcdefgh" and "abcefgh" is "abc".
 
-// Approach:
+// Approach 1: Word by Word Matching
+// LCP(string1, string2, string3) = LCP (LCP (string1, string2), string3)
+
+/***************************************************************************************************************************/
+
+// Approach 2: Character by Character Matching
 
 // The prefix has to be the prefix of ALL the strings.
 // So, you can pick any random string from the array and start checking its characters from the beginning in order to see if they can be a part of the common substring.
