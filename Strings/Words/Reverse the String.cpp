@@ -39,7 +39,31 @@ string Solution::solve(string A) {
 
 /***************************************************************************************************************************/
 
-// Approach 2: First reverse the whole string, then reverse the reversed words individually
+// Approach 2: Split string approach using stringstream
+
+string Solution::solve(string A) {
+    vector<string> v;
+    stringstream ss(A);
+    string word;
+    while(getline(ss,word,' ')){
+        // Corner Case: Multiple spaces together
+        if(word.size()>0) v.push_back(word);
+    }
+    
+    string ans="";
+    if(!v.size()) return ans;
+    for(auto it=v.rbegin();it!=v.rend();it++){
+        ans += *it;
+        ans += ' ';
+    }
+    ans.pop_back(); // Removing space after last word
+    
+    return ans;
+}
+
+/***************************************************************************************************************************/
+
+// Approach 3: First reverse the whole string, then reverse the reversed words individually
 
 string Solution::solve(string A) {
     reverse(A.begin(),A.end());
