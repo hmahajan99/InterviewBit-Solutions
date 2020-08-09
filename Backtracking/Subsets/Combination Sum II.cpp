@@ -1,3 +1,6 @@
+// Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
+// Each number in C may only be used once in the combination.
+
 void findCombinations(vector<vector<int>>& ans,vector<int> &current,vector<int> &A, int B,int i,int currentSum){
 
     if(currentSum>B) return;

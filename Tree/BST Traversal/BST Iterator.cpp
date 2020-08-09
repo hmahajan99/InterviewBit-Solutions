@@ -1,9 +1,9 @@
-/*
-Approach 1 : Do an inorder traversal of the tree and store the entries in an array with the current pointer set to the start of the array. 
-hasNext checks if the pointer is less than the size of the array. 
-next() would return the element at the current position incrementing the position by 1.
-However, this has an additional space complexity of O(N) where N = number of nodes in the tree.
-*/
+// Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
+
+// Approach 1 : Do an inorder traversal of the tree and store the entries in an array with the current pointer set to the start of the array. 
+// hasNext checks if the pointer is less than the size of the array. 
+// next() would return the element at the current position incrementing the position by 1.
+// However, this has an additional space complexity of O(N) where N = number of nodes in the tree.
 
 /***************************************************************************************************************************/
 

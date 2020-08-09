@@ -131,6 +131,35 @@ int Solution::lPalin(ListNode* head) {
     return isPalindrome(head,l).first;
 }
 
+// Alternative recursive approach
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+
+ListNode *temp; // use temp to traverse list in forward direction
+
+bool isPalindrome(ListNode* head){
+    if(!head) return true;
+    int smallAns = isPalindrome(head->next);
+    if(smallAns&&head->val==temp->val){
+        temp = temp->next;
+        return true;
+    }
+    return false;
+    
+}
+
+int Solution::lPalin(ListNode* head) {
+    temp = head;
+    return isPalindrome(head);
+}
+
 
 /***************************************************************************************************************************/
 

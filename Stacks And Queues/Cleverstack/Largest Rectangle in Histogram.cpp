@@ -1,3 +1,6 @@
+// Given an array of integers A of size N. A represents a histogram i.e A[i] denotes height of the ith histogram’s bar. 
+// Width of each bar is 1. Find the area of largest rectangle in the histogram.
+
 // Approach 1 : Brute force O(N^2) time complexity
 // We can iterate on all the histograms, and for each histogram H, we try to create the maximum rectange with H as the height.
 // To do that, we keep going left L and right R till we encounter a histogram with height less than H.

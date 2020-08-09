@@ -1,3 +1,5 @@
+// Merge k sorted linked lists and return it as one sorted list.
+
 // Approach 1: Brute force
 // A Simple Solution is to initialize result as first list. 
 // Now traverse all lists starting from second list. 

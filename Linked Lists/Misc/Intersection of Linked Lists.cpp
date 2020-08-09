@@ -1,3 +1,5 @@
+// Write a program to find the node at which the intersection of two singly linked lists begins.
+
 // Approach 1 : Method 1(Simply use two loops)
 // Use 2 nested for loops. The outer loop will be for each node of the 1st list and inner loop will be for 2nd list. 
 // In the inner loop, check if any of nodes of the 2nd list is same as the current node of the first linked list. 

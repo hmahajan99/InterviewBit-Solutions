@@ -1,3 +1,6 @@
+// Merge two sorted linked lists and return it as a new list.
+// The new list should be made by splicing together the nodes of the first two lists, and should also be sorted.
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {

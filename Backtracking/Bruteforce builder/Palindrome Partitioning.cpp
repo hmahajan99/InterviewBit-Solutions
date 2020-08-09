@@ -1,3 +1,12 @@
+// Given a string s, partition s such that every string of the partition is a palindrome.
+// Return all possible palindrome partitioning of s.
+// For example, given s = "aab",
+// Return
+//   [
+//     ["a","a","b"]
+//     ["aa","b"],
+//   ]
+
 // When on index i, you incrementally check all substring starting from i for being palindromic. 
 // If found, you recursively solve the problem for the remaining string and add it to your solution. 
 // Start this recursion from starting position of the string.

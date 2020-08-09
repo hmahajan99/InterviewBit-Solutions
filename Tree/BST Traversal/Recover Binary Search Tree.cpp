@@ -1,17 +1,16 @@
-/*
-Lets look at the inorder traversal of the tree.
-In the ideal case, the inorder traversal should be sorted. But in this case, because of the swapping 2 cases might arise :
-1) A sequence like {1, 4, 3, 7, 9}, where the swapped pair are adjacent to each other. Only one inversion ( Inversion here means pair of integer A[i], A[i+1] where A[i] > A[i+1] ).
-2) A sequence like {1, 9, 4, 5, 3, 10} where the swapped pair are not adjacent. 2 inversions. We take the min and max of the inversion numbers and we know the number we need to swap to get the right answer.
+// Two elements of a binary search tree (BST) are swapped by mistake. Tell us the 2 values swapping which the tree will be restored.
 
-Now to figure this out, we need to do an inorder traversal. However, the traditional recursive inorder traversal has memory overhead of the depth of the tree.
-Using a stack has the same memory overhead.
+// Lets look at the inorder traversal of the tree.
+// In the ideal case, the inorder traversal should be sorted. But in this case, because of the swapping 2 cases might arise :
+// 1) A sequence like {1, 4, 3, 7, 9}, where the swapped pair are adjacent to each other. Only one inversion ( Inversion here means pair of integer A[i], A[i+1] where A[i] > A[i+1] ).
+// 2) A sequence like {1, 9, 4, 5, 3, 10} where the swapped pair are not adjacent. 2 inversions. We take the min and max of the inversion numbers and we know the number we need to swap to get the right answer.
 
-So, we need something which does not use recursion or stack and can still do the inorder traversal.
+// Now to figure this out, we need to do an inorder traversal. However, the traditional recursive inorder traversal has memory overhead of the depth of the tree.
+// Using a stack has the same memory overhead.
 
-Solution - Time=O(n) Space=O(1)
+// So, we need something which does not use recursion or stack and can still do the inorder traversal.
 
-*/
+// Solution - Time=O(n) Space=O(1)
 
 /**
  * Definition for binary tree

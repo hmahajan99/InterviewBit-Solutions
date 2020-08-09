@@ -1,4 +1,7 @@
-// Evaluate the value of an arithmetic expression in Reverse Polish Notation
+// Evaluate the value of an arithmetic expression in Reverse Polish Notation.
+// Valid operators are +, -, *, /. Each operand may be an integer or another expression.
+// Input 1: A =   ["2", "1", "+", "3", "*"]
+// Output 1: 9
 
 int Solution::evalRPN(vector<string> &A) {
     stack<int> s;

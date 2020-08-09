@@ -1,6 +1,27 @@
 // Bucket - Linkedlist tree
 
-// Approach 1 : Using constant space
+// Given a binary tree, flatten it to a linked list in-place.
+// Given
+//          1
+//         / \
+//        2   5
+//       / \   \
+//      3   4   6
+// The flattened tree should look like:
+//    1
+//     \
+//      2
+//       \
+//        3
+//         \
+//          4
+//           \
+//            5
+//             \
+//              6
+// Note that the left child of all nodes should be NULL.
+
+// Approach 1 : Using constant space, Iterative
 
 /**
  * Definition for binary tree

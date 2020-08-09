@@ -1,3 +1,8 @@
+// Find the number of distinct Max Heap can be made from A distinct integers.
+// You have to ensure the following properties for the max heap :
+// Heap has to be a complete binary tree ( A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.)
+// Every node is greater than all its children.
+
 // 1. Suppose there are n distinct elements to be used in Max heap. Now it is for sure that the maximum element among this n distinct element will surely be placed on the root of the heap.
 // 2. Now there will be remaining (n-1) elements to be arranged.
 // 3. Now point to be remembered here is that the structure of the heap will remain the same. That is only the values within the node will change however the overall structure remaining the same.
@@ -11,13 +16,13 @@
 
 // 1. So now the question remains only of finding L for given n. It can be found as follows:
 // 2. Find the height of the heap h = log2(n)
-// 3. Find the max number of elements that can be present in the hth level of any heap . Lets call it m. m = 2h
-// 4. Find the number of elements that are actually present in last level(hth level) in heap of size n. Lets call it p. p = n - (2h - 1)
-// 5. Now if the last level of the heap is more than or equal to exactly half filled, then L would be 2h - 1
+// 3. Find the max number of elements that can be present in the hth level of any heap . Lets call it m. m = 2^h
+// 4. Find the number of elements that are actually present in last level(hth level) in heap of size n. Lets call it p. p = n - (2^h - 1)
+// 5. Now if the last level of the heap is more than or equal to exactly half filled, then L would be 2^h - 1
 // 6. However if it is half filled then it will reduced by the number of elements in last level left to fill exactly half of the last level.
 // 7. So final equation for L will be as follows :
-//  L = 2h - 1 if p >= m/2
-//    = 2h - 1 - (m/2 - p) if p<(m/2) 
+//  L = 2^h - 1 if p >= m/2
+//    = 2^h - 1 - (m/2 - p) if p<(m/2) 
 
 #define ll long long
 

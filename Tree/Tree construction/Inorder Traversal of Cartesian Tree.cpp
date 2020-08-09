@@ -1,3 +1,6 @@
+// Given an inorder traversal of a cartesian tree, construct the tree.
+// Cartesian tree : is a heap ordered binary tree, where the root is greater than all the elements in the subtree. 
+
 // Approach 1 : T => O(nlogn)
 // T(n) = 2T(n/2)+c*n
 
@@ -36,4 +39,4 @@ TreeNode* Solution::buildTree(vector<int> &inorderTraversal) {
 /***************************************************************************************************************************/
 
 // Approach 2 : TODO Use segment tree to find max 
-// [Build Time= O(n)] + [T(n) = 2T(n/2)+c*logn]  O(nloglogn) ?
+// [Build Time= O(n)] + [T(n) = 2T(n/2)+c*logn]  => O(n) using Masters Theorem

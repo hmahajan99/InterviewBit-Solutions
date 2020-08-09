@@ -1,3 +1,4 @@
+// Implement pow(A, B) % C. In other words, given A, B and C, find (AB)%C.
 // NOTE: In C++ (-1)%20 = -1
 
 int power(int A, int B, int C){

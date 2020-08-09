@@ -1,4 +1,6 @@
-// NOTE: The digits are stored in reverse order
+// You are given two linked lists representing two non-negative numbers. 
+// The digits are stored in reverse order and each of their nodes contain a single digit. 
+// Add the two numbers and return it as a linked list.
 
 // Approach 1 : Converting LL to strings and doing string addition (integer will overflow)
 

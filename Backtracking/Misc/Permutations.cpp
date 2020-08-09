@@ -1,4 +1,5 @@
 // Bucket: Permutations
+// Given a collection of numbers, return all possible permutations.
 
 // Approach 1: Using next_permutation STL
 vector<vector<int> > Solution::permute(vector<int> &A) {

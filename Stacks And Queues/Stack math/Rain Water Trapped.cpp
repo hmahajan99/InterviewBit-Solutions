@@ -1,3 +1,6 @@
+// Given an integer array A of non-negative integers representing an elevation map where the width of each bar is 1, 
+// compute how much water it is able to trap after raining.
+
 // Approach 1 : Brute force
 // A Simple Solution is to traverse every array element and find the highest bars on left and right sides. 
 // Take the smaller of two heights. The difference between the smaller height and height of the current element is the amount of water that can be stored in this array element. 

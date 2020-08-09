@@ -1,3 +1,6 @@
+// Given a digit string, return all possible letter combinations that the number could represent.
+// A mapping of digit to letters (just like on the telephone buttons) is given below.
+
 string get(char ch){
     switch(ch){
         case '0': return "0"; 

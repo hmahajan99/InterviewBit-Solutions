@@ -1,3 +1,6 @@
+// Given a singly linked list L: L0 → L1 → … → Ln-1 → Ln, reorder it to: L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → …
+// You must do this in-place without altering the nodes’ values.
+
 // Approach 1 : Time O(n^2) 
 // 1) Initialize current node as head.
 // 2) While next of current node is not null, do following

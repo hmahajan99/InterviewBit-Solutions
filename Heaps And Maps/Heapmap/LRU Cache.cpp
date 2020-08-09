@@ -1,3 +1,9 @@
+// Design and implement a data structure for LRU (Least Recently Used) cache. It should support the following operations: get and set.
+// get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+// set(key, value) - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least recently used item before inserting the new item.
+// The LRU Cache will be initialized with an integer corresponding to its capacity. Capacity indicates the maximum number of unique keys it can hold at a time.
+// Definition of “least recently used” : An access to an item is defined as a get or a set operation of the item. “Least recently used” item is the one with the oldest access time.
+
 // Approach 1: Brute force
 // Keep an array of Nodes , Node => (key,value,timestamp) . Size of the array will be equal to the given capacity of cache.
 // (a) For get(int key): We can simply iterate over the array and compare the key of each node with the given key and return the value stored in the node for that key. If we don’t find any such node, return simply -1.

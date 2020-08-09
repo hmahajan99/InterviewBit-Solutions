@@ -1,3 +1,6 @@
+// Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
+// The same repeated number may be chosen from C unlimited number of times.
+
 void findCombinations(vector<vector<int>>& ans,vector<int> &current,vector<int> &A, int reqSum,int i,int currSum){
 
     if(currSum>reqSum) return;

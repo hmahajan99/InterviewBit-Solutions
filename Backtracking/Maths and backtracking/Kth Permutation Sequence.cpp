@@ -1,3 +1,15 @@
+// The set [1,2,3,…,n] contains a total of n! unique permutations.
+// By listing and labeling all of the permutations in order,
+// We get the following sequence (ie, for n = 3 ) :
+// 1. "123"
+// 2. "132"
+// 3. "213"
+// 4. "231"
+// 5. "312"
+// 6. "321"
+// Given n and k, return the kth permutation sequence.
+// For example, given n = 3, k = 4, ans = "231"
+
 // Approach 1: Using next_permutation STL (Can also implement next_permutation from scratch)
 // Time complexity is O(n * n!)
 

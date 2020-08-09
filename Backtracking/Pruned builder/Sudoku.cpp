@@ -1,3 +1,7 @@
+// Write a program to solve a Sudoku puzzle by filling the empty cells.
+// Empty cells are indicated by the character '.'
+// You may assume that there will be only one unique solution.
+
 // Approach 1: canPlace in O(N) 
 
 bool canPlace(vector<vector<char>> &board,int row,int col,char num){

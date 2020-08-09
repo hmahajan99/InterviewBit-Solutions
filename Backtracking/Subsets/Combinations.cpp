@@ -1,4 +1,5 @@
-// Note: Make sure the combinations are sorted.
+// Given two integers n and k, return all possible combinations of k numbers out of 1 2 3 ... n.
+// Make sure the combinations are sorted.
 
 // Approach 1: Backtracking
 

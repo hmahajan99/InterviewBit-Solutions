@@ -1,3 +1,6 @@
+// Reverse a linked list from position m to n. Do it in-place and in one-pass.
+// Given m, n satisfy the following condition: 1 ≤ m ≤ n ≤ length of list.
+
 // Approach : Using DUMMY NODE
 
 /**

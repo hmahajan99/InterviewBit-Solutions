@@ -1,3 +1,6 @@
+// Given two arrays A & B of size N each.
+// Find the maximum N elements from the sum combinations (Ai + Bj) formed from elements in array A and B.
+
 // Approach 1 : Brute force is to find all combinations pair sum O(N Square) and return top N max elements.
 // Insert all possible combinataions into max heap and take out n elements
 // Time - O(n^2)
@@ -13,8 +16,6 @@
 // Start popping from heap (n-iterations).
 // And insert the sum (A[L-1]+A[R]) and (A[L]+B[R-1]).
 // Take care that repeating indices should not be there in the heap (use map for that).
-
-
 
 class Node{
     public:

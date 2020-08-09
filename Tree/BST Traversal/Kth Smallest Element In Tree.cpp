@@ -1,11 +1,4 @@
-// Approach 2 : Using O(1) Extra Space => Morris Traversal
-
-/***************************************************************************************************************************/
-
-// Approach 3 : If modification in BST structure allowed,then 
-// augment the BST (storing count of nodes in left subtree with every node).
-
-/***************************************************************************************************************************/
+// Given a binary search tree, write a function to find the kth smallest element in the tree.
 
 // Approach 1 : Inorder Traversal => T = O(h+k)
 
@@ -43,3 +36,11 @@ int Solution::kthsmallest(TreeNode* root, int K) {
     return ans->val;
 }
 
+/***************************************************************************************************************************/
+
+// Approach 2 : Using O(1) Extra Space => Morris Traversal
+
+/***************************************************************************************************************************/
+
+// Approach 3 : If modification in BST structure allowed,then 
+// augment the BST (storing count of nodes in left subtree with every node).

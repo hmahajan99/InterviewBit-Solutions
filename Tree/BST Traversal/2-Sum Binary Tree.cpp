@@ -1,3 +1,6 @@
+// Given a binary search tree T, where each node contains a positive integer, and an integer K, 
+// you have to find whether or not there exist two different nodes A and B such that A.value + B.value = K.
+
 /**
  * Definition for binary tree
  * struct TreeNode {

@@ -1,3 +1,8 @@
+// Find shortest unique prefix to represent each word in the list.
+// Input: [zebra, dog, duck, dove]
+// Output: {z, dog, du, dov}
+// Assume that no word is prefix of another. In other words, the representation is always possible. 
+
 // Approach 1 : Using sorting
 
 int getDiff(string s,string t){

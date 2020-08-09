@@ -1,3 +1,5 @@
+// Given a linked list, remove the nth node from the end of list and return its head.
+
 // Approach 1: Remove (len-N+1)th node from start 
 
 /**
