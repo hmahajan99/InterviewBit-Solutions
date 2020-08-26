@@ -1,3 +1,9 @@
+// Given A and B you have to find all stepping numbers in range A to B.
+// The stepping number: A number is called as a stepping number if the adjacent digits have a difference of 1.
+// e.g. 123 is stepping number, but 358 is not a stepping number
+// Input: A = 10 B = 20
+// Output: [10, 12]
+
 // Approach 1: Brute force
 
 bool isStepping(int n){

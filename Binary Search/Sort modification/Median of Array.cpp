@@ -1,3 +1,12 @@
+// There are two sorted arrays A and B of size m and n respectively.
+// Find the median of the two sorted arrays ( The median of the array formed by merging both the arrays ).
+// The overall run time complexity should be O(log (m+n)).
+// Sample Input
+// A : [1 4 5]
+// B : [2 3]
+// Sample Output
+// 3
+
 // Approach 1: Brute force, Time - O(m+n)
 // Here we need to find the median of the two sorted arrays of different sizes so we keep two variables 
 // to point to the arrays and one used to count the no of elements read. 

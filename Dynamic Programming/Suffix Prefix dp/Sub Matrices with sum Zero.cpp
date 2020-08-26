@@ -1,3 +1,5 @@
+// Given a 2D matrix, find the number non-empty sub matrices, such that the sum of the elements inside the sub matrix is equal to 0. (note: elements might be negative).
+
 // Approach 1: O(n^4) solution
 // Precompute prefix 2d array to get sum of sum matrix in O(1)
 // dp[i][j] = Sum of all elements in submatrix (0,0) to (i,j)

@@ -1,8 +1,13 @@
 // Similar to Dynamic Programming/Misc/Word Break II.cpp
 
 // Given an array A with non negative numbers, divide the array into two parts such that the average of both the parts is equal.
-
 // Return both parts (If exist). If there is no solution. return an empty list
+// If multiple solutions exist, return the solution where length(A) is minimum. If there is still a tie, return the one where A is lexicographically smallest.
+// Array will contain only non negative numbers.
+
+// Input: A = [1 7 15 29 11 9]
+// Output: [9 15] [1 7 11 29]
+// Explanation: The average of part is (15+9)/2 = 12, average of second part elements is (1 + 7 + 11 + 29) / 4 = 12
 
 // Approach: 3D DP & Dp optimized backtrack
 // Assume sum of set1 = s1, with size = n1
@@ -30,6 +35,7 @@ bool isPossible(int i,int sum,int numElements,vector<int> &A,vector<int> &res){
     
     if(dp[i][sum][numElements]==false) return false; // return if false, if true will go on to fill res
     
+    // include
     if(A[i]<=sum){
         res.push_back(A[i]);
         if(isPossible(i+1,sum-A[i],numElements-1,A,res)){
@@ -38,6 +44,7 @@ bool isPossible(int i,int sum,int numElements,vector<int> &A,vector<int> &res){
         res.pop_back();
     }
 
+    // exclude
     if(isPossible(i+1,sum,numElements,A,res)){
         return dp[i][sum][numElements]=true;
     }

@@ -1,6 +1,6 @@
 // Given a 3 x A board, find the number of ways to color it using at most 4 colors such that no 2 adjacent boxes have same color.
 // Diagonal neighbors are not treated as adjacent boxes.
-// Return the ways modulo 109 + 7 as the answer grows quickly.
+// Return the ways modulo 10^9 + 7 as the answer grows quickly.
 
 // Input 1: A = 1
 // Output 1: 36
@@ -15,7 +15,7 @@
 // Now, suppose that we color the given column with one of these triplets. We scan color the next column with the triplets of color that do not contradict our coloring scheme.
 // E.g.:	0 |	1	 	 	 
 //      	1 |	3	 	 	 
-//     	2 |	0	 	 	 
+//      	2 |	0	 	 	 
 // Here, we can color third column using triplets that go well with the triplet {1,3,0}. These are {0,1,2}, {2,1,3}, ……
 // This can be coded using a simple dynamic programming approach.
 // Recurrence:
@@ -118,7 +118,7 @@ bool isCompatible(const triplet& t1,  const triplet& t2){
 }
 
 int Solution::solve(int N){
-  fillTriplets();
+    fillTriplets();
 	if(N<=0) return -1;
 	
     //Bottom-up dp

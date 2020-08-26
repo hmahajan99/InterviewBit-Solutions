@@ -5,7 +5,7 @@
 // Notes:
 // 1) Values of a permutation are sequentially inserted into the BST by general rules i.e in increasing order of indices.
 // 2) Height of BST is maximum number of edges between root and a leaf.
-// 3) Return answer modulo 109 + 7.
+// 3) Return answer modulo 10^9 + 7.
 
 // For example, A = 3, B = 1
 // Two permutations [2, 1, 3] and [2, 3, 1] generate a BST of height 1.
@@ -36,7 +36,9 @@
 
 // Now, number of permutations to form left subtree of size x with some height are say, X. Also, we call these permutations set A.
 // And similarly, number of permutations to form right subtree of size y with some height are say, Y. And we call these permutations set B.
-// Now, we can choose any permutation from A and any permutation from B, to form a unique tree. So, there are total of X*Y permutations. Also, any sequence of size (x+y) can give the same BST if the mutual ordering of the permutation from set A and permutation of set B is maintained. There are choose(x + y, y) ways to do that. So, total ways are X*Y*choose(x + y, y).
+// Now, we can choose any permutation from A and any permutation from B, to form a unique tree. So, there are total of X*Y permutations. 
+// Also, any sequence of size (x+y) can give the same BST if the mutual ordering of the permutation from set A and permutation of set B is maintained. 
+// There are choose(x + y, y) ways to do that. So, total ways are X*Y*choose(x + y, y).
 
 #define lli long long int
 #define M (int)(1e9+7)

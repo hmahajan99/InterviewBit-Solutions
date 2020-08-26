@@ -1,3 +1,6 @@
+// Given a sorted array, remove the duplicates in place such that each element can appear atmost twice and return the new length.
+// Do not allocate extra space for another array, you must do this in place with constant memory.
+
 int Solution::removeDuplicates(vector<int> &A) {
     int n = A.size();
     int i=0;

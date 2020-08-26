@@ -1,3 +1,7 @@
+// Given a binary grid A of size N x M consisting of 0's and 1's, find the area of the largest rectangle inside the grid 
+// such that all the cells inside the chosen rectangle should have 1 in them.
+// You are allowed to permutate the columns matrix i.e. you can arrange each of the column in any order in the final grid.
+
 // Find the largest rectangle of 1’s with swapping of columns allowed
 // The idea is to use an auxiliary matrix to store count of consecutive 1’s in every column. 
 // Once we have these counts, we sort all rows of auxiliary matrix in non-increasing order of counts. 
@@ -8,7 +12,7 @@
     // 0 1 0 1 0  
     // 0 1 0 1 1
     // 1 1 0 1 0
-    // Auxilaiary Matrix
+    // Auxiliary Matrix
     // 0 1 0 1 0 
     // 0 2 0 2 1
     // 1 3 0 3 0
@@ -41,7 +45,5 @@ int Solution::solve(vector<vector<int> > &A) {
     }
     
     return maxArea;
-    
-    
-    
+
 }

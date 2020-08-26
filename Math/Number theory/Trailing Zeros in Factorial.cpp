@@ -1,3 +1,5 @@
+// Given an integer A, return the number of trailing zeroes in A!
+
 // Trailing zeroes are obtained from powers of 10.
 // The ZERO comes from 10.
 // The 10 comes from 2 x 5

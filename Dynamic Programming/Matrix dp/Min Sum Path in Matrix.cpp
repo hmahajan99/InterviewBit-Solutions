@@ -1,3 +1,6 @@
+// Given a 2D integer array A of size M x N, you need to find a path from top left to bottom right which minimizes the sum of all numbers along its path.
+// NOTE: You can only move either down or right at any point in time.
+
 // Approach 1: Bottom Up
 
 int Solution::minPathSum(vector<vector<int> > &A) {

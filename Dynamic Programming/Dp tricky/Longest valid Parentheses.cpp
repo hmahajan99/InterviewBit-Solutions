@@ -1,3 +1,6 @@
+// Given a string A containing just the characters ’(‘ and ’)’.
+// Find the length of the longest valid (well-formed) parentheses substring.
+
 // Approach 1: Brute Force
 // A Simple Approach is to find all the substrings of given string. 
 // For every string, check if it is a valid string or not. 

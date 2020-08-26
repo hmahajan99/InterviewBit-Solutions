@@ -1,3 +1,6 @@
+// Given an integer array A of N integers, find the pair of integers in the array which have minimum XOR value. 
+// Report the minimum XOR value.
+
 // Approach 1: Brute force
 // The brute-force would be to try every pair (x, y). If the array is sorted, do you need to check for every pair? 
 

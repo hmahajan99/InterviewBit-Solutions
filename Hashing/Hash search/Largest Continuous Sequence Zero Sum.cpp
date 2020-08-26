@@ -1,6 +1,9 @@
 // Find the largest continuous sequence in a array which sums to zero.
 // NOTE : If there are multiple correct answers, return the sequence which occurs first in the array
 
+// Input:  {1 ,2 ,-2 ,4 ,-4}
+// Output: {2 ,-2 ,4 ,-4}
+
 // There are two steps:
 // 1. Create cumulative sum array where ith index in this array represents total sum from 1 to ith index element.
 // 2. Iterate all elements of cumulative sum array and use hashing to find two elements where value at ith index == value at jth index but i != j.

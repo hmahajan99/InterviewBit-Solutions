@@ -3,7 +3,8 @@
 // You have to cut rod at all these weak points. You can perform these cuts in any order. 
 // After a cut, rod gets divided into two smaller sub-rods. 
 // Cost of making a cut is the length of the sub-rod in which you are making a cut.
-// Your aim is to minimise this cost. Return an array denoting the sequence in which you will make cuts. If two different sequences of cuts give same cost, return the lexicographically smallest.
+// Your aim is to minimise this cost. Return an array denoting the sequence in which you will make cuts. 
+// If two different sequences of cuts give same cost, return the lexicographically smallest.
 
 // IMP NOTE!!!=> HAVE TO RETURN SEQUENCE IN THIS QUES
 // SO NEED TO KEEP A PARENT ARRAY ALSO TO REGENERATE SEQUENCE

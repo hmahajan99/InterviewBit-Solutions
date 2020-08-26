@@ -1,3 +1,11 @@
+// There are a total of A courses you have to take, labeled from 1 to A.
+// Some courses may have prerequisites, for example to take course 2 you have to first take course 1, which is expressed as a pair: [1,2].
+// Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?
+// Input: A = 2, B = [1, 2], C = [2, 1]
+// Output: 0
+// Explanation: It is not possible to complete all the courses.
+
+// Approach: Detecting cycle in a directed graph
 // Consider a graph with courses from 1 to N representing the nodes of the graph and each prerequisite pair [u, v] correspond to a directed edge from u to v.
 // It is obvious that we will get several disjoint components of the graph.
 // When is it possible for you to finish all the courses? 

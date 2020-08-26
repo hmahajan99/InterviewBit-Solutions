@@ -1,3 +1,4 @@
+// Following code tries to figure out if a number is prime 
 //  1 is neither a prime number nor a composite number
 // iterating until the sqrt(n) only as one factor should be <= sqrt(n) and another should be >= sqrt(n)
 

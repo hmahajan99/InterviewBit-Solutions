@@ -1,5 +1,13 @@
 // Bucket - Graph adhoc
 
+// Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
+// Given A : 1 -> 2 -> 3
+// A height balanced BST  :
+
+//       2
+//     /   \
+//    1     3
+
 // Approach 1: Brute force
 // Find the middle of the list, make it the root. 
 // Left part of the tree comes from the first half and right part of the tree comes from the later half.

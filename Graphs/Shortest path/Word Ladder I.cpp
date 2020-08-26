@@ -2,6 +2,13 @@
 // You must change exactly one character in every transformation.
 // Each intermediate word must exist in the dictionary.
 
+// Input:
+//    A = "hit"
+//    B = "cog"
+//    C = ["hot", "dot", "dog", "lot", "log"]
+// Output: 5
+// Explanation: "hit" -> "hot" -> "dot" -> "dog" -> "cog"
+
 // Think in terms of a graph.
 // When can you do the transition from one word to another ? Does it mean it can indicate a graph edge between those 2 words ? 
 

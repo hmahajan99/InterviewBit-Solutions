@@ -1,3 +1,5 @@
+// Given a positive integer A, return its corresponding column title as appear in an Excel sheet.
+
 // NOTE: Starts from 1, not 0
 // 1 -> A
 // 2 -> B

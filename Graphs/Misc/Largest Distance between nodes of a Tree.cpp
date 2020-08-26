@@ -1,5 +1,12 @@
 // Bucket - Depth first search
 
+// Given an arbitrary unweighted rooted tree which consists of N nodes.
+// The goal of the problem is to find largest distance between two nodes in a tree.
+// Distance between two nodes is a number of edges on a path between the nodes (there will be a unique path between any pair of nodes since it is a tree).
+// The nodes will be numbered 0 through N - 1.
+// The tree is given as an array A, there is an edge between nodes A[i] and i (0 <= i < N). 
+// Exactly one of the i's will have A[i] equal to -1, it will be root node.
+
 // Approach 1: Like calculating diameter of a generic N-ary tree instead of a binary tree
 // Diameter - Max Distance b/w any 2 nodes
 
@@ -55,7 +62,8 @@ int Solution::solve(vector<int> &A) {
 // The answer will be the length of a path from x to q.
 
 // Proof of correctness:
-// The crucial step is to prove that x will be one of the endpoints of the path with maximal length (note that there might be more than one such path). If it is, then the longest path from x will be the longest path in the tree.
+// The crucial step is to prove that x will be one of the endpoints of the path with maximal length (note that there might be more than one such path). 
+// If it is, then the longest path from x will be the longest path in the tree.
 // Let’s prove it by contradiction: 
 // Assume there is a strictly longer path between s and t, neither of which is x. 
 // Let h be a node which is closest to u among the nodes on a path between s and t.

@@ -1,3 +1,7 @@
+// Given an array ‘A’ of sorted integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.
+// Example: Input : A : [1 3 5] k : 4
+// Output : YES as 5 - 1 = 4 
+
 // Approach 1: Brute Force, O(n^2)
 
 /***************************************************************************************************************************/

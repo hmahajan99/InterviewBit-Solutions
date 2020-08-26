@@ -1,3 +1,22 @@
+// Given N x M character matrix A of O's and X's, where O = white, X = black.
+// Return the number of black shapes. A black shape consists of one or more adjacent X's (diagonals not included)
+
+// Input 1:
+//     A = [ OOOXOOO
+//           OOXXOXO
+//           OXOOOXO  ]
+// Output 1:
+//     3
+// Explanation:
+//     3 shapes are  :
+//     (i)    X
+//          X X
+//     (ii)
+//           X
+//     (iii)
+//           X
+//           X
+
 bool isValid(int i,int j,int n,int m){
     if(i<0||i>=n||j<0||j>=m) return false;
     return true;

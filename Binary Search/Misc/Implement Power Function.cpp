@@ -1,6 +1,7 @@
 // Bucket - Search step simulation
 // Implement pow(x, n) % d.
 // Assume power is non negative
+// Make sure the answer you return is non negative.
 
 // IMP NOTE!!!=> In C++, -1%20 = -1
 

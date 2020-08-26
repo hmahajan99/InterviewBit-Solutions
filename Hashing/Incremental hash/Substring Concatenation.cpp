@@ -1,3 +1,10 @@
+// You are given a string, S, and a list of words, L, that are all of the same length.
+// Find all starting indices of substring(s) in S that is a concatenation of each word in L exactly once and without any intervening characters.
+// Example :
+// S: "barfoothefoobarman"
+// L: ["foo", "bar"]
+// You should return the indices: [0,9].
+
 // Approach 1: Brute Force, Sliding Window
 // Time : (n-k)*k  ,k=B.size()*B[0].size()  OR O(A.size()*B.size()*B[0].size())
 // You know that every word in L is of same length( say x). Let the number of words in L be n.

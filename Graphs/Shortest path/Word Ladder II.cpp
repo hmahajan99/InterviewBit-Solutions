@@ -1,8 +1,24 @@
+// Given two words (start and end), and a dictionary, find the shortest transformation sequence from start to end, such that:
+// Only one letter can be changed at a time
+// Each intermediate word must exist in the dictionary
+// If there are multiple such sequence of shortest length, return all of them. 
+
+// Example :
+// start = "hit"
+// end = "cog"
+// dict = ["hot","dot","dog","lot","log"]
+// Return
+//   [
+//     ["hit","hot","dot","dog","cog"],
+//     ["hit","hot","lot","log","cog"]
+//   ]
+
 // IMP QUESTION
 // Approach: BFS to construct ALL POSSIBLE SHORTEST PATHS IN THE GRAPH (NEED TO STORE PARENTS FOR EACH NODE)
 
 // This is a classic shortest path problem.
-// Think in terms of a graph. You basically need to add an edge between two words which can be converted into one another. Resulting graph will be unweighted and undirected.
+// Think in terms of a graph. You basically need to add an edge between two words which can be converted into one another. 
+// Resulting graph will be unweighted and undirected.
 // BFS can help you in computing the shortest path in undirected, unweighted graph
 // Once you know about the shortest path, how do we construct all shortest paths ?
 // When will a node x be a parent of node Y ?

@@ -1,3 +1,5 @@
+// Find longest Arithmetic Progression in an integer array A of size N, and return its length.
+
 // Approach 1: Brute force, Time - O(n^3)
 // A simple solution is to one by one consider every pair as first two elements of AP and check for the remaining elements
 

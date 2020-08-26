@@ -4,7 +4,7 @@
 // Note: You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
 
 // Approach 1: Bottom Up DP
-// Time complexity is O(k * number of days ^ 2)
+// Time complexity is O(k * number of days ^ 2) ,if can do atmost k transactions
 // dp[i][j] = max profit using at most i transactions up to day j (including day j) 
 // dp[i][j] = max(dp[i][j-1], max(prices[j] - prices[m] + dp[i-1][m])) where m is 0...j-1
 

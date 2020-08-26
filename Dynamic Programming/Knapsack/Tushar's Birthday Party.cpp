@@ -18,6 +18,13 @@
 // 1 <= No. of friends <= 1000
 // 1 <= No. of dishes <= 1000
 
+// Input:
+//     2 4 6
+//     2 1 3
+//     2 5 3
+// Output: 14
+// Explanation: First friend will take 1st and 2nd dish, second friend will take 2nd dish twice.  Thus, total cost = (5+3)+(3*2)= 14
+
 // Approach 1: Top Down DP
 // As the friends cannot share dishes, we can calculate the cost for each of them independently and add all such costs.
 // Now, the problem instance for every friend is reduced to standard Unbounded KnapSack problem

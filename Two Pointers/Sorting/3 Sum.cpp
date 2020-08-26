@@ -2,6 +2,8 @@
 // Return the sum of the three integers.
 // Assume that there will only be one solution
 
+// Example: Given array S = {-1 2 1 -4} and target = 1 .The sum that is closest to the target is 2. (-1 + 2 + 1 = 2)
+
 // Approach 1: Brute Force, O(n^3)
 
 /***************************************************************************************************************************/

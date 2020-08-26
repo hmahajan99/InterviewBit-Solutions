@@ -1,3 +1,6 @@
+// Remove duplicates from Sorted Array
+// Given a sorted array, remove the duplicates in place such that each element appears only once and return the new length.
+
 // Notice that the array is sorted.
 // This implies that all repetitions for an element are clustered together in the array.
 // Try maintaining 2 pointers in the array: 

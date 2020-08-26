@@ -1,5 +1,5 @@
-Given a number N, find all factors of N.
-Make sure the returned array is sorted.
+// Given a number N, find all factors of N.
+// Make sure the returned array is sorted.
 
 // Approach 1: Use sorting, O(sqrt(n)log(n))
 

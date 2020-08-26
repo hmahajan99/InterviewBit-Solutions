@@ -46,7 +46,7 @@
 // 14-3=11 moves reqd
 // For middle groups => (11C4 * 2^3) * (7C2 * 2^1)
 // First group => 5C2
-// Last group => 5C3
+// Last group => 3C3
 
 
 #define MOD (int)(1e9+7)

@@ -1,5 +1,14 @@
 // Find the index of values that satisfy A + B = C + D, where A,B,C & D are integers values in the array
 
+// 1) Return the indices `A1 B1 C1 D1`, so that 
+//   A[A1] + A[B1] = A[C1] + A[D1]
+//   A1 < B1, C1 < D1
+//   A1 < C1, B1 != D1, B1 != C1 
+// 2) If there are more than one solutions, then return the tuple of values which are lexicographical smallest. 
+// Example:
+// Input: [3, 4, 7, 1, 2, 9, 8]
+// Output: [0, 2, 3, 5] (O index)
+
 // Approach 1: Brute force O(n^4)
 
 /***************************************************************************************************************************/

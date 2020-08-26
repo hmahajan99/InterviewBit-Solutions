@@ -115,8 +115,8 @@ int findOptimal(vector<string> &words, int pos, int mask){
 	for(int i=0;i<words.size();i++){
 		// Check if i-th word is already considered or not
 		if(((1<<i)&mask)==0){
-		    // Add i-th word to mask
-		    int smallAns = findOptimal(words,i,mask|(1<<i)) + combineString(words,pos,i);
+		  // Add i-th word to mask
+		  int smallAns = findOptimal(words,i,mask|(1<<i)) + combineString(words,pos,i);
 			ans = min(ans,smallAns);
 		}
 	}
@@ -141,18 +141,18 @@ int Solution::solve(vector<string>& A){
  		if(A[i] != "") newA.push_back(A[i]);
  	}
   
-    int N = newA.size();
-    nonOverlapLen = vector<vector<int>>(N,vector<int>(N,-1));
-    dp = vector<vector<int>>(N+1,vector<int>((1<<N),-1));
+  int N = newA.size();
+  nonOverlapLen = vector<vector<int>>(N,vector<int>(N,-1));
+  dp = vector<vector<int>>(N+1,vector<int>((1<<N),-1));
 
 	//Set the mask initially to all 0's
-    int mask = 0;
+  int mask = 0;
 	
 	//Set the target mask
-    targetMask = (1<<N)-1;
+  targetMask = (1<<N)-1;
     
-    // Find the length of optimal solution
-    // pos = -1 initially (no last string currently)
-    return findOptimal(newA, -1, mask);
+  // Find the length of optimal solution
+  // pos = -1 initially (no last string currently)
+  return findOptimal(newA, -1, mask);
 
 }

@@ -3,6 +3,13 @@
 // Given a set of digits (A) in sorted order, find how many numbers of length B are possible whose value is less than number C.
 // NOTE: All numbers can only have digits from the given set, number can be repeated any number of times 
 
+// Input:
+//     0 1 2 5  
+//     2  
+//     21  
+// Output:
+//     5 (10, 11, 12, 15, 20 are possible)
+
 // Approach: 1D DP
 
 // Let us try to solve for all the possible cases.
@@ -14,7 +21,7 @@
 
 // Generate all such B digit numbers.
 // For the first position we can’t have 0 and for ther rest of (B - 1) position we can have all d possible digits.
-// Hence, Answer = d B if A contains 0 else (d-1) * ( d )(B-1)
+// Hence, Answer = d ^ B if A contains 0 else (d-1) * ( d ^ (B-1) )
 
 // Case 3: If B is equal to length of C
 // Construct digit array of C ( call it as digit[]).

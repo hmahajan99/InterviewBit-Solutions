@@ -17,7 +17,7 @@ vector<vector<int> > Solution::solve(int K, vector<vector<int> > &M) {
         vector<vector<int>> newM(M);
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                for(int p=0;p<5;p++){
+                for(int p=0;p<4;p++){
                     int x=i+dx[p],y=j+dy[p];
                     if(x>=0&&x<n&&y>=0&&y<m){
                         newM[i][j]=max(newM[i][j],M[x][y]);

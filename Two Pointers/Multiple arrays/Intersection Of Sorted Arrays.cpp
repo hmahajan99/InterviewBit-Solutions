@@ -1,3 +1,6 @@
+// Find the intersection of two sorted arrays OR in other words,
+// Given 2 sorted arrays, find all the elements which occur in both the arrays.
+
 // Approach 1: Linear Search on B
 // For each element of A linear search on B
 // Time - O(n*m)

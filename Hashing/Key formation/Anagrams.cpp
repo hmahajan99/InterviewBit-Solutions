@@ -1,3 +1,9 @@
+// Given an array of strings, return all groups of strings that are anagrams. Represent a group by a list of integers representing the index in the original list. Look at the sample case for clarification.
+// Input : cat dog god tca
+// Output : [[1, 4], [2, 3]]
+// cat and tca are anagrams which correspond to index 1 and 4.
+// dog and god are another set of anagrams which correspond to index 2 and 3.
+
 // Approach 1: Sorting
 // Time: Say, n strings length m each => O((mlogm)*n + (nlogn)*m) = O(nmlog(mn))
 // Sorting 2 anagrams gives the same string
@@ -14,13 +20,13 @@ vector<vector<int> > Solution::anagrams(const vector<string> &A) {
 
     vector<vector<int> > ans;    
     for(int i=0;i<v.size();){
-            string t=v[i].first;
-            vector<int> sans;
-            while(i<v.size()&&v[i].first==t){
-                sans.push_back(v[i].second+1);
-                i++;
-            }
-            ans.push_back(sans);
+        string t=v[i].first;
+        vector<int> sans;
+        while(i<v.size()&&v[i].first==t){
+            sans.push_back(v[i].second+1);
+            i++;
+        }
+        ans.push_back(sans);
     }
     
     return ans;

@@ -1,5 +1,6 @@
 // Given a string, find the rank of the string amongst its permutations sorted lexicographically.
 // Note that the characters might be repeated. If the characters are repeated, we need to look at the rank in unique permutations.
+// The answer might not fit in an integer, so return your answer % 1000003
 
 // Example :
 // Input : 'aba'

@@ -1,3 +1,5 @@
+// Given a column title A as appears in an Excel sheet, return its corresponding column number.
+
 // A -> 1
 // B -> 2
 // C -> 3

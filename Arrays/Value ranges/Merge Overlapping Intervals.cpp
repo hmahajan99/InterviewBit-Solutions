@@ -53,8 +53,8 @@ vector<Interval> Solution::merge(vector<Interval> &A) {
 // Lets see how we check if interval 1 (a,b) intersects with interval 2 (c,d):
 
 // Overlap case :
-// a---------------------b          OR     a------b
-//             c-------------------d           c------------------d
+// a---------------------b          
+//             c-------------------d          
 
 // Non overlap case :
 // a--------------------b   c------------------d

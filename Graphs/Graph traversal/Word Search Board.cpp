@@ -1,10 +1,27 @@
+// Given a 2D board and a word, find if the word exists in the grid.
+// The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. 
+// The cell itself does not count as an adjacent cell.
+// The same letter cell may be used more than once.
+
+// Given board =
+// [
+//   ["ABCE"],
+//   ["SFCS"],
+//   ["ADEE"]
+// ]
+// word = "ABCCED", -> returns 1,
+// word = "SEE", -> returns 1,
+// word = "ABCB", -> returns 1,
+// word = "ABFSAB" -> returns 1
+// word = "ABCD" -> returns 0
+
 // Approach 1: Using DFS, BFS gives MLE 
 
 // Lets look at the bruteforce approach.
-// You iterate over every cell of the matrix to explore if it could be the starting point. Then for every neighboring character which has the same character as the next character in the string, we explore if rest of the string can be formed using that neighbor cell as the starting point.
+// You iterate over every cell of the matrix to explore if it could be the starting point. 
+// Then for every neighboring character which has the same character as the next character in the string, we explore if rest of the string can be formed using that neighbor cell as the starting point.
 // To sum it up,
-// exist(board, word, i , j) is true if for any neighbor (k,l) of (i,j)
-// exist(board, word[1:], k, l) is true
+// exist(board, word, i , j) is true if for any neighbor (k,l) of (i,j) exist(board, word[1:], k, l) is true
 // Now note that we could memoize the answer for exist(board, word suffix length, i, j).
 
 class QueueNode{

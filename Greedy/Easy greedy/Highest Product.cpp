@@ -1,3 +1,6 @@
+// Given an array A, of N integers A.
+// Return the highest product possible by multiplying 3 numbers from the array.
+
 // Approach 1: Sorting, Time O(nlogn)
 
 bool cmp(int a,int b){

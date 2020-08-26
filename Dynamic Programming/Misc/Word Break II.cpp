@@ -37,7 +37,7 @@ bool canBreak(int i, string &s, unordered_set<string> &dict,string &sentence,vec
             sentence = temp + substring + " ";
             result |= canBreak(j+1,s,dict,sentence,ans);  
             // if(result) break;
-            sentence=temp;
+            sentence=temp; // backtrack
         }
     }
     return dp[i]=result;

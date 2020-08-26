@@ -1,6 +1,6 @@
 // There are certain problems which are asked in the interview to also check how you take care of overflows in your problem.
 // This is one of those problems.
-// Please take extra care to make sure that you are type-casting your ints to long properly and at all places. Try to verify if your solution works if number of elements is as large as 105
+// Please take extra care to make sure that you are type-casting your ints to long properly and at all places. Try to verify if your solution works if number of elements is as large as 10^5
 
 // Food for thought :
 // Even though it might not be required in this problem, in some cases, you might be required to order the operations cleverly so that the numbers do not overflow.

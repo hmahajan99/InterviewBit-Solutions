@@ -1,3 +1,5 @@
+// Write a function that takes an unsigned integer and returns the number of 1 bits it has.
+
 // Approach 1: O(no of bits) = O(logn)
 
 int Solution::numSetBits(unsigned int N) {

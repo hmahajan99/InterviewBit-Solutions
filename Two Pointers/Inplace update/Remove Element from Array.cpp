@@ -1,3 +1,7 @@
+// Given an array and a value, remove all the instances of that value in the array.
+// Also return the number of elements left in the array after the operation.
+// It does not matter what is left beyond the expected length.
+
 // Maintain 2 pointers in the array:
 // One pointer iterates over the array
 // Other pointer only moves when it finds an element different from ‘elem’.

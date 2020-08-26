@@ -5,6 +5,11 @@
 // Note: You can choose more than 2 numbers.
 // 1 <= A[i] <= 2000
 
+// Input:
+//     A = [   [1, 2, 3, 4]
+//             [2, 3, 4, 5]    ]
+// Output: We will choose 3 and 5.
+
 // Approach 1: Bottom Up DP
 // In other words, if we are on (x, y), then if we choose (x, y), we can't choose (x + 1, y), (x, y + 1) and (x + 1, y + 1). 
 // We know that within a column, we can choose at max 1 element. 
@@ -20,7 +25,7 @@ int Solution::adjacent(vector<vector<int> > &A) {
     dp[0] = max(A[0][0],A[1][0]); 
     if(n>1) dp[1] = max(dp[0],max(A[0][1],A[1][1]));
     for(int i=2;i<n;i++){
-        dp[i] = max(dp[i-1],dp[i-2]+max(A[0][i],A[1][i]));
+        dp[i] = max(dp[i-1],dp[i-2]+max(A[0][i],A[1][i])); // exclude,include
     }
     return dp.back();
 }

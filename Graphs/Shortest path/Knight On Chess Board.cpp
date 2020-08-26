@@ -1,3 +1,8 @@
+// Given any source point, (C, D) and destination point, (E, F) on a chess board, we need to find whether Knight can move to the destination or not.
+// Movements for a knight ( 8 possibilities ).
+// If yes, then what would be the minimum number of steps for the knight to move to the said point.
+// If knight can not move from the source point to the destination point, then return -1.
+
 // Minimum number of steps for the knight to move to the said point
 
 // Approach: BFS, finding the shortest path in an unweighted graph

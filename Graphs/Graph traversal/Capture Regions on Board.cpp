@@ -1,6 +1,18 @@
 // Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
 // A region is captured by flipping all 'O's into 'X's in that surrounded region.
 
+// Example Input
+//  A = [  [X, X, X, X],
+//         [X, O, O, X],
+//         [X, X, O, X],
+//         [X, O, X, X] ]
+// Example Output
+//  A = [  [X, X, X, X],
+//         [X, X, X, X],
+//         [X, X, X, X],
+//         [X, O, X, X] ]
+// Example Explanation: 'O' in (4,2) is not surrounded by X from below.
+
 // Note that all the chunks of O which remain as O are the ones which have at least one O connected to them which is on the boundary. Otherwise they will turn into X.
 // Use BFS starting from ‘O’s on the boundary and mark them as ‘B’, then iterate over the whole board and mark ‘O’ as ‘X’ and ‘B’ as ‘O’.
 

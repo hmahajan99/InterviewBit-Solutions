@@ -1,6 +1,13 @@
 // Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target?
 // Note: The solution set must not contain duplicate quadruplets.
 
+// Example :
+// Given array S = {1 0 -1 0 -2 2}, and target = 0
+// A solution set is:
+//     (-2, -1, 1, 2)
+//     (-2,  0, 0, 2)
+    // (-1,  0, 0, 1)
+
 // Approach 1: Brute force
 // Time - O(n^4)
 // The naive approach obviously is exploring all combinations of 4 integers using 4 loops.

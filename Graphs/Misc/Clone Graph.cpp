@@ -1,5 +1,6 @@
 // Bucket - Graph hashing
-// This problem is a classical application of graph traversal algorithm.
+
+// Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
 
 // Approach 1: BFS
 // Before we continue, we first need to make sure if the graph is directed or not. If you notice how Node is defined above, it is quite obvious that the graph is a directed graph. 

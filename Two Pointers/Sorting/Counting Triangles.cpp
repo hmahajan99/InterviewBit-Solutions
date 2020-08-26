@@ -1,3 +1,6 @@
+// You are given an array of N non-negative integers, A0, A1 ,…, AN-1.
+// Considering each array element Ai as the edge length of some line segment, 
+// count the number of triangles which you can form using these array values.
 // You can use any value only once while forming each triangle. Order of choosing the edge lengths doesn’t matter. 
 
 // Approach 1: Brute Force, O(n^3)
